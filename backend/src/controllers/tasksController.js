@@ -1,6 +1,6 @@
 const getAll = (request, response) => {
     
-   return response.send("Hello World!");
+   return response.status(200).json({message: "controler está funcionando"});
 };
 
 module.exports = {
