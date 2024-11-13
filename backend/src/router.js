@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
+const taskController = require("./controllers/taskController");
 
 //rotas
-router.get("/tasks", (req, res) => res.send("rota funcionando!"));
+router.get("/tasks", taskController.getAll);
 
 module.exports = router;
