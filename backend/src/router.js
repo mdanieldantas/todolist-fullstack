@@ -1,8 +1,9 @@
-const express = require("express");
+const express = require('express');
+const tasksController = require('./controllers/tasksController');
+
 const router = express.Router();
-const taskController = require("./controllers/taskController");
 
 //rotas
-router.get("/tasks", taskController.getAll);
+router.get("/tasks", tasksController.getAll);
 
 module.exports = router;
